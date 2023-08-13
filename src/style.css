@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: .8fr 4fr;
+    grid-template-rows: 1fr 8fr 0.7fr;
+    min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV */
+
+.nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+}
+
+.nav h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.navitem {
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.create {
+    margin-bottom: 100%;
+}
+
+
+/* Content */
+
+.content {
+    grid-row: 2 / 3;
+}
+
+/* Create Modal */
+
+.create-modal {
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 15%;
+    height: 100%;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    height: 5%;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+#description {
+    height: 40%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+form button {
+    width: 20%;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10x;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+}
+.footer img {
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

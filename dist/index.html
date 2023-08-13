@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./main.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); </style>
     <title>To Do List</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1>Task Manager</h1> 
+        </div>
+        <div class="nav">
+            <div class="create navitem">Create To Do Task</div>
+            <div class="todo-list">
+                <h3>To Do Tasks</h3>
+                <div class="pri-one pri"></div>
+                <div class="pri-two pri"></div>
+                <div class="pri-three pri"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="create-modal">
+                <form action="NA" method="post">
+                        <label for='title'>Title:</label>
+                        <input type='text' id='title' name='title'>
+                        <label for='due-date'>Due Date:</label>
+                        <input type='date' id='due-date' name='due-date'>
+                        <label for="priority">Priority:</label>
+                        <select id="priority">
+                            <option selected value="NA" disabled>Select 1 to 3... 1 is Urgent</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for='description'>Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                        <div class="submit"><button type="submit" id="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <a href='https://github.com/seanghods' target=”_blank”> Sean Ghods <img src='./github-mark.png'></a>
+        </div>
+    </div>
 </body>
 </html>
