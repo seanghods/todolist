@@ -16,9 +16,9 @@
             <div class="create navitem">Create To Do Task</div>
             <div class="todo-list">
                 <h3>To Do Tasks</h3>
-                <div class="pri-one pri"></div>
-                <div class="pri-two pri"></div>
-                <div class="pri-three pri"></div>
+                <div class="pri-high pri">Priority High</div>
+                <div class="pri-med pri">Priority Medium</div>
+                <div class="pri-low pri">Priority Low</div>
             </div>
         </div>
         <div class="content">
@@ -30,14 +30,14 @@
                         <input type='date' id='due-date' name='due-date'>
                         <label for="priority">Priority:</label>
                         <select id="priority">
-                            <option selected value="NA" disabled>Select 1 to 3... 1 is Urgent</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option selected value="NA" disabled>Select High to Low</option>
+                            <option value="high">High</option>
+                            <option value="med">Medium</option>
+                            <option value="low">Low</option>
                         </select>
                         <label for='description'>Description:</label>
                         <textarea id="description" name="description"></textarea>
-                        <div class="submit"><button type="submit" id="submit">Submit</button></div>
+                        <div class="submit"><button type="submit" id="submit" onclick="event.preventDefault()">Submit</button></div>
                 </form>
             </div>
         </div>
